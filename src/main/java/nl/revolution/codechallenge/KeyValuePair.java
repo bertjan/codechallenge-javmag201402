@@ -1,20 +1,25 @@
 package nl.revolution.codechallenge;
 
-public class KeyValuePair<F, S> {
+/**
+ * Simple key value pair.
+ * @param <K> Generic type for the key.
+ * @param <V> Generic type for the value.
+ */
+public class KeyValuePair<K, V> {
 
-    private final F key;
-    private final S value;
+    private final K key;
+    private final V value;
 
-    public KeyValuePair(F key, S value) {
+    public KeyValuePair(K key, V value) {
         this.key = key;
         this.value = value;
     }
 
-    public F key() {
+    public K key() {
         return key;
     }
 
-    public S value() {
+    public V value() {
         return value;
     }
 
